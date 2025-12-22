@@ -1,0 +1,1 @@
+This is a Laravel PHP project demonstrating basic CRUD (Create, Read, Update, Delete) operations. The application showcases Laravel’s MVC architecture, routing, controllers, models, migrations, and database interactions using Eloquent ORM. It is intended as a simple example for learning and practicing Laravel fundamentals.
