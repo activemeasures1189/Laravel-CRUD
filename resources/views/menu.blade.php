@@ -15,5 +15,7 @@
     @endforeach
 </ul>
 <p><a href="{{ url('/') }}">Home</a></p>
+<p><a href="{{ url('/create') }}">Create New</a></p>
+
 </body>
 </html>

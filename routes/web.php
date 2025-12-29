@@ -35,6 +35,19 @@ Route::get('/edit/{id}', function($id){
     return view('edititem')->with('data', $data);
 });
 
+// CREATE ROUTE
+Route::get('/create', function(){
+    return view('createitem');
+});
+Route::post('/menu', function(){
+  $name = request('name');
+  $description = request('description');
+  $sql = "INSERT INTO burgers (name, description) VALUES (?,  ?)";
+  DB::insert($sql, [$name, $description]);
+  return redirect('/menu');
+
+});
+
 // UPDATE ROUTE
 Route::post('/item/{id}', function($id){
 
